@@ -30,10 +30,21 @@
             return <h1>{title}</h1>
         }
 
+
+
         function HomePage(){
+
+            const [likes, setLikes] = React.useState(0)
+
+            function handleClick(){
+                console.log("increment like count")
+                setLikes(likes + 1)
+            }
+
             return(
                 <div>
                     <Header title="react" />
+                    <button onClick={handleClick} >Like: {likes}</button>
                 </div>
             )
         }
