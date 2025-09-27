@@ -22,10 +22,10 @@
 
         app.appendChild(header)
     </script> -->
-
-    <script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/jsx">
         const app = document.getElementById('app')
-        const root = ReactDom.createRoot(app)
+        const root = ReactDOM.createRoot(app)
         root.render(<h1>Develop. Preview. Ship.</h1>)
     </script>
 </body>
